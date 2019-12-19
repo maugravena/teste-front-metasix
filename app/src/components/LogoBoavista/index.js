@@ -3,7 +3,7 @@ import logo from '../../img/logo.png';
 
 const LogoBoavista = styled.img.attrs({ src: logo, alt: 'Logo Boa Vista' })`
   height: auto;
-  max-width: ${props => (props.smaller ? '200px' : '100%')};
+  max-width: ${props => (props.smaller ? '150px' : '100%')};
   object-fit: contain;
 `;
 

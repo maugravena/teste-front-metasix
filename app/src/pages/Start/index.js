@@ -8,7 +8,7 @@ function Start() {
   return (
     <StartWrapper>
       <LogoBoavista />
-      <Link to="/faq">
+      <Link to="/dashboard">
         <BtnStart content="Entrar" />
       </Link>
     </StartWrapper>
