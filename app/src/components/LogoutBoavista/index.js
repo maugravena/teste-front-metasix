@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 
 const Text = styled.span`
   color: #fff;
+  font-size: 14px;
   font-weight: bold;
 `;
 
