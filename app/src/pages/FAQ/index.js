@@ -1,12 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Teste = styled.p`
-  border: 2px solid red;
-`;
+import QuestionsBoavista from '../../components/QuestionsBoavista';
 
 function FAQ() {
-  return <Teste>mauricio</Teste>;
+  return <QuestionsBoavista />;
 }
 
 export default FAQ;
