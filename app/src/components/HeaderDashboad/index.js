@@ -8,13 +8,13 @@ const Wrapper = styled.header`
   align-items: center;
   background-color: #0168b4;
   display: flex;
-  height: 100px;
+  height: 105px;
   justify-content: space-between;
-  padding: 25px;
+  padding: 0 25px;
   width: 100%;
 
   @media (min-width: 768px) {
-    padding: 50px;
+    padding: 0 50px;
   }
 `;
 
