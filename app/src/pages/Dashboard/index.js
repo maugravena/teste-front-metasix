@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { useRouteMatch, Switch, Route } from 'react-router-dom';
 import DashboadWrapper from '../../components/DashboardWrapper';
 import HeaderDashboard from '../../components/HeaderDashboad';
-import NavbarDashboard from '../../NavbarDashboard';
+import NavbarDashboard from '../../components/NavbarDashboard';
 import Empty from '../Empty';
 import FAQ from '../FAQ';
 
