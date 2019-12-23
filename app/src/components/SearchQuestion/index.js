@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 const Input = styled.input`
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 9px -4px rgb(0, 0, 0);
+  box-shadow: 0px 0px 2px -0px rgb(138, 138, 138);
   margin-right: 10px;
 
   @media (min-width: 1024px) {
