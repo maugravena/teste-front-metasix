@@ -17,11 +17,11 @@ const Wrapper = styled.div`
     margin-left: 32px;
   }
 
-  @media (min-width: 768px) {
-    padding: 6px 30px 6px 20px;
+  @media (min-width: 564px) {
+    padding: 10px 30px 10px 20px;
 
     & > span {
-      margin-left: 85px;
+      margin-left: 75px;
     }
   }
 `;
@@ -32,7 +32,8 @@ const Text = styled.p`
   margin-right: auto;
   max-width: 160px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 564px) {
+    font-size: 16px;
     margin-right: auto;
     max-width: 100%;
   }
@@ -40,15 +41,20 @@ const Text = styled.p`
 
 const Number = styled.span`
   font-weight: bold;
+  font-size: 13px;
+`;
 
-  @media (min-width: 768px) {
-    font-size: 13px;
+const EditIcon = styled.span`
+  @media (min-width: 564px) {
+    font-size: 22px;
   }
 `;
 
-const EditIcon = styled.span``;
-
-const DeleteIcon = styled.span``;
+const DeleteIcon = styled.span`
+  @media (min-width: 564px) {
+    font-size: 22px;
+  }
+`;
 
 function QuestionFAQ({ question }) {
   return (

@@ -14,11 +14,19 @@ const Wrapper = styled.div`
   }
 `;
 
-const Input = styled.input`
+const Input = styled.input.attrs(() => ({
+  placeholder: 'Busque por termo...'
+}))`
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 2px -0px rgb(138, 138, 138);
+  font-size: 14px;
   margin-right: 10px;
+  padding: 8px;
+
+  &::placeholder {
+    font-style: italic;
+  }
 
   @media (min-width: 1024px) {
     width: 280px;

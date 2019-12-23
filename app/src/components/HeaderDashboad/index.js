@@ -8,9 +8,10 @@ const Wrapper = styled.header`
   align-items: center;
   background-color: #0168b4;
   display: flex;
-  height: 105px;
+  height: 90px;
   justify-content: space-between;
   padding: 0 25px;
+  margin-bottom: 30px;
   width: 100%;
 
   @media (min-width: 768px) {

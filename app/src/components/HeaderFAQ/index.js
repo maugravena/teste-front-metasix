@@ -5,12 +5,10 @@ import SearchQuestion from '../SearchQuestion';
 const Wrapper = styled.div`
   flex-direction: column;
   display: flex;
-  margin-top: 30px;
 
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 50px;
   }
 `;
 

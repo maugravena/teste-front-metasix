@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   display: flex;
   padding: 6px 4px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 578px) {
     padding: 6px 20px;
   }
 `;
@@ -22,7 +22,7 @@ const Title = styled.p.attrs(props => ({ children: props.content }))`
   font-size: 12px;
   font-weight: bold;
 
-  @media (min-width: 768px) {
+  @media (min-width: 578px) {
     font-size: 14px;
 
     &:not(:first-child) {
@@ -32,7 +32,7 @@ const Title = styled.p.attrs(props => ({ children: props.content }))`
 `;
 
 const NewQuestion = styled.span`
-  @media (min-width: 768px) {
+  @media (min-width: 578px) {
     margin-left: auto;
   }
 
@@ -44,7 +44,7 @@ const NewQuestion = styled.span`
   & > svg {
     margin-right: 2px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 578px) {
       font-size: 18px;
       margin-right: 10px;
     }

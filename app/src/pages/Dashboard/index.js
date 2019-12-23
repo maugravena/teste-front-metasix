@@ -16,11 +16,10 @@ const Wrapper = styled.main`
 const Section = styled.section`
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   padding: 0 25px;
 
   @media (min-width: 768px) {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 0 50px;
   }
 `;
