@@ -1,8 +1,14 @@
 import React from 'react';
-import QuestionsBoavista from '../../components/QuestionsBoavista';
+import HeaderFAQ from '../../components/HeaderFAQ';
+import ListQuestions from '../../components/ListQuestions';
 
 function FAQ() {
-  return <QuestionsBoavista />;
+  return (
+    <>
+      <HeaderFAQ />
+      <ListQuestions />
+    </>
+  );
 }
 
 export default FAQ;
