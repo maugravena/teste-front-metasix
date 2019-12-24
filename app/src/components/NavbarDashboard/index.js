@@ -5,9 +5,11 @@ import { NavLink, useRouteMatch } from 'react-router-dom';
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     justify-content: flex-start;
+    margin-bottom: 50px;
   }
 `;
 
@@ -29,7 +31,9 @@ const Item = styled(NavLink).attrs(props => ({
 
   &.${activeClassName} {
     background-color: #0168b4;
+    box-shadow: none;
     color: #fff;
+    font-size: 13px;
   }
 
   @media (min-width: 768px) {

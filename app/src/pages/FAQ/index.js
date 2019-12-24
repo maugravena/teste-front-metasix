@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import HeaderFAQ from '../../components/HeaderFAQ';
+import ListQuestions from '../../components/ListQuestions';
 
-const Teste = styled.p`
-  border: 2px solid red;
-`;
+const Wrapper = styled.section``;
 
 function FAQ() {
-  return <Teste>mauricio</Teste>;
+  return (
+    <Wrapper>
+      <HeaderFAQ />
+      <ListQuestions />
+    </Wrapper>
+  );
 }
 
 export default FAQ;

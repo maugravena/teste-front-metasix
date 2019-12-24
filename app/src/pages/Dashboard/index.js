@@ -1,21 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useRouteMatch, Switch, Route } from 'react-router-dom';
-import DashboadWrapper from '../../components/DashboardWrapper';
 import HeaderDashboard from '../../components/HeaderDashboad';
-import NavbarDashboard from '../../NavbarDashboard';
+import NavbarDashboard from '../../components/NavbarDashboard';
 import Empty from '../Empty';
 import FAQ from '../FAQ';
 
-const Main = styled.main`
+const Wrapper = styled.main`
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  margin-top: 30px;
+  height: 100vh;
+`;
+
+const Section = styled.section`
+  display: flex;
+  flex-direction: column;
   padding: 0 25px;
 
   @media (min-width: 768px) {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 0 50px;
   }
 `;
@@ -24,16 +28,16 @@ function Dashboad() {
   const { path } = useRouteMatch();
 
   return (
-    <DashboadWrapper>
+    <Wrapper>
       <HeaderDashboard />
-      <Main>
+      <Section>
         <NavbarDashboard />
         <Switch>
           <Route path={`${path}/faq`} component={FAQ} />
           <Route component={Empty} />
         </Switch>
-      </Main>
-    </DashboadWrapper>
+      </Section>
+    </Wrapper>
   );
 }
 
