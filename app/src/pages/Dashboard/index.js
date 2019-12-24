@@ -8,14 +8,14 @@ import FAQ from '../FAQ';
 
 const Wrapper = styled.main`
   background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
   height: 100vh;
+
+  @media (orientation: landscape) and (max-width: 1000px) {
+    height: 100%;
+  }
 `;
 
 const Section = styled.section`
-  display: flex;
-  flex-direction: column;
   padding: 0 25px;
 
   @media (min-width: 768px) {
