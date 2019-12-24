@@ -6,10 +6,10 @@ import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const Wrapper = styled.div`
   align-items: center;
-  justify-content: space-between;
   background-color: #fff;
   box-shadow: 0px 0px 3px 0px rgb(219, 219, 219);
   display: flex;
+  justify-content: space-between;
   margin: 10px 0;
   padding: 6px 20px 6px 6px;
 

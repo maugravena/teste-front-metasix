@@ -5,11 +5,11 @@ import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Wrapper = styled.div`
   align-items: center;
-  justify-content: space-between;
   background-color: #0168b4;
   border-radius: 8px;
   box-shadow: 0px 1px 3px 0px rgb(123, 123, 123);
   display: flex;
+  justify-content: space-between;
   padding: 6px 4px;
 
   @media (min-width: 578px) {
