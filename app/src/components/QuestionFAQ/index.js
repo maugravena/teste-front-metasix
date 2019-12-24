@@ -59,8 +59,8 @@ const DeleteIcon = styled.span`
 function QuestionFAQ({ question }) {
   return (
     <Wrapper>
-      <Text>{question.name}</Text>
-      <Number>{question.idade}</Number>
+      <Text>{question.question}</Text>
+      <Number>{question.position + 1}</Number>
       <EditIcon>
         <FontAwesomeIcon icon={faEdit} color="#0168B4" />
       </EditIcon>
