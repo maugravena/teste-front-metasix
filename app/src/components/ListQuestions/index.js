@@ -12,16 +12,20 @@ const Wrapper = styled.div`
 `;
 
 function ListQuestions() {
-  // const [hasError, setErrors] = useState(false);
+  const [hasError, setError] = useState(false);
   const [questions, setQuestions] = useState([]);
 
   async function fetchData() {
-    const res = await Questions.get();
-    const { data } = res;
-    const questionsObj = data.results;
-    questionsObj.sort((a, b) => a.position - b.position);
+    try {
+      const res = await Questions.get();
+      const { data } = res;
+      const questionsObj = await data.results;
 
-    setQuestions(questionsObj);
+      questionsObj.sort((a, b) => a.position - b.position);
+      setQuestions(questionsObj);
+    } catch (error) {
+      setError(true);
+    }
   }
 
   useEffect(() => {
@@ -31,8 +35,9 @@ function ListQuestions() {
   return (
     <Wrapper>
       <HeaderQuestions />
+      {hasError && <div>Não foi possível carregar os dados</div>}
       {questions.map(question => (
-        <QuestionFAQ key={question.position} question={question} />
+        <QuestionFAQ key={question.objectId} question={question} />
       ))}
     </Wrapper>
   );

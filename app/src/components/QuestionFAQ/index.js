@@ -71,12 +71,8 @@ function QuestionFAQ({ question }) {
   );
 }
 
-QuestionFAQ.defaultProps = {
-  question: {}
-};
-
 QuestionFAQ.propTypes = {
-  question: PropTypes.objectOf(PropTypes.object)
+  question: PropTypes.objectOf(PropTypes.any).isRequired
 };
 
 export default QuestionFAQ;
